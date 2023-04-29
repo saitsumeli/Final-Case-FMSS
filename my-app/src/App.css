@@ -1,0 +1,170 @@
+body {
+  background-image: url(https://cdn.wallpapersafari.com/57/77/2hT4G0.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  overflow-x: hidden
+}
+/* header css */ 
+.header {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url(https://vizyonergenc.com/storage/posts/December2020/Why-Do-Stars-All-Look-Almost-the-Same-Size-ftr.jpg);
+  height: 200px;
+}
+
+.header h1 {
+  font-family: 'PT Serif', serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  animation: blinker 2s linear infinite;
+  color: #6dbaeb;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  }
+  @keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+.header input {
+  width: auto;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 45px;
+}
+
+.header input:focus {
+  outline: none !important;
+  border-color: #e60909;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.header button {
+  width: auto;
+  height: 33px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: #333;
+  border-color: #ccc;
+  border-radius: 25px;
+}
+
+.header button:focus {
+  background-color: rgb(73, 81, 201);
+}
+/* page sayfalarına gidebilmek için oluşturduğumuz butonun css kısmı; */
+.PageBtn {
+  margin-top: 9px;
+  width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* getirdiğimiz verilerin sayfada card halinde gelmesi için; */
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.mainCard{
+  justify-content: center;
+  max-height: 100vh;
+  max-width: 100vh;
+  margin-top: 30px;
+}
+.img {
+  margin-top: 0;
+  background-image: url(https://www.denofgeek.com/wp-content/uploads/2019/12/x-wing.jpg?w=1024);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+.myForm {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  width: 100vw; /* "vh" yerine "vw" kullanarak viewport genişliğine göre ayarlanmasını sağlıyoruz */
+  color: black; 
+  margin: 0 auto; /* Bu özellik ile öğeyi sayfa ortalamaya alıyoruz */
+  max-width: 1200px; /* Bu özellik ile öğenin maksimum genişliğini 1200 piksel olarak sınırlandırıyoruz */
+  justify-content: center;
+  box-sizing: border-box;
+}
+.myCard {
+  background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
+  background-position: center;
+  background-size: cover;
+  width: 200px; /* Kartın genişliği 100% */
+  height: 400px; /* Kartın yüksekliği 100% */
+  border: 1px solid gray; /* Sınır kutusu dahil edildi */
+  box-sizing: border-box; /* Kutunun sınır kutusu dahil edilir */
+}
+
+.myCard h5 {
+  color: #fff;
+  font-size: medium;
+}
+
+.myCard p {
+  color: #fff;
+}
+/* loading yazısı için; */
+.loading {
+  background-image: url(https://wallpapers.com/images/featured/5binreit9du28bif.jpg);
+  background-position: center;
+  background-size: cover;
+  color: rgb(226, 221, 221);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 100px;
+}
+/* detay kısmı için; */
+.detailCard {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: red;
+}
+.detailImg {
+  background-image: url(https://www.denofgeek.com/wp-content/uploads/2019/12/x-wing.jpg?w=1024);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.detailCard p {
+  color: white;
+}
+.detailText {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/196/131/596/star-wars-darth-vader-movies-anakin-skywalker-wallpaper-preview.jpg);
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #3fce57;
+  width: 500px;
+  height: 680px;
+}
+.detailBtn {
+  background-color: rgb(209, 123, 65);
+  border-radius: 20px;
+  justify-content: center;
+  text-align: center;
+}
+.backBtn{
+  background-color: rgb(209, 123, 65);
+  border-radius: 20px;
+  justify-content: center;
+  text-align: center;
+}
